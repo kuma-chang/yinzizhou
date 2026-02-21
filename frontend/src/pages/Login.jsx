@@ -1,6 +1,7 @@
 import Form from "../components/Form"
 import { useNavigate } from "react-router-dom";
 import "../styles/Login.css"
+import NavDrawer from '../components/NavDrawer'
 
 function ShowNoAccountButton () {
     const navigate = useNavigate();
@@ -18,6 +19,7 @@ function ShowNoAccountButton () {
 function Login() {
     return (
         <div>
+            <NavDrawer/>
             <Form route="/api/token/" method="login" />
             <ShowNoAccountButton />
         </div>

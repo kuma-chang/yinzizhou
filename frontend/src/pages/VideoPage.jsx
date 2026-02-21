@@ -1,14 +1,15 @@
 import Button from '@mui/material/Button';
 import NavDrawer from '../components/NavDrawer'
 
-function Home() {
+function VideoPage() {
 
     return (
         <div>
             <NavDrawer/>
-            <Button variant="contained">Home</Button>
+            <Button variant="contained">VideoPage</Button>
         </div>
     );
 }
 
-export default Home;
+export default VideoPage;
+

@@ -1,14 +1,15 @@
 import Button from '@mui/material/Button';
 import NavDrawer from '../components/NavDrawer'
 
-function Home() {
+function GalleryPage() {
 
     return (
         <div>
             <NavDrawer/>
-            <Button variant="contained">Home</Button>
+            <Button variant="contained">GalleryPage</Button>
         </div>
     );
 }
 
-export default Home;
+export default GalleryPage;
+
