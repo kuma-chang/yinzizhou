@@ -1,0 +1,11 @@
+{
+  "nav_drawer_about": "關於",
+  "nav_drawer_event": "活動",
+  "nav_drawer_video": "影片",
+  "nav_drawer_gallery": "相冊",
+  "nav_drawer_contact": "聯絡方式",
+  "nav_drawer_notesapp": "筆記APP",
+  "welcome": "歡迎使用 React!",
+  "description": "這是使用 i18n 語言切換的範例。",
+  "language": "語言"
+}

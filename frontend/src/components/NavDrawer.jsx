@@ -19,9 +19,13 @@ import PersonIcon from '@mui/icons-material/Person';
 import TodayIcon from '@mui/icons-material/Today';
 import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
 
+import { useTranslation } from 'react-i18next';
+import LanguagePicker from './LanguagePicker';
+
 export default function TemporaryDrawer() {
   const [open, setOpen] = React.useState(false);
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
@@ -33,27 +37,27 @@ export default function TemporaryDrawer() {
 
   const pageList = [
       {
-        name: "About",
+        name: t("nav_drawer_about"),
         icon: <PersonIcon />,
         url: "/about",
       },
       {
-        name: "Event",
+        name: t("nav_drawer_event"),
         icon: <TodayIcon />,
         url: "/event",
       },
       {
-        name: "Video",
+        name: t("nav_drawer_video"),
         icon: <VideoLibraryIcon />,
         url: "/video",
       },
       {
-        name: "Gallery",
+        name: t("nav_drawer_gallery"),
         icon: <PhotoLibraryIcon />,
         url: "/gallery",
       },
       {
-        name: "Contact",
+        name: t("nav_drawer_contact"),
         icon: <EmailIcon />,
         url: "/contact",
       },
@@ -80,7 +84,7 @@ export default function TemporaryDrawer() {
               <ListItemIcon>
                 <EditNoteIcon />
               </ListItemIcon>
-              <ListItemText primary={"Notes"} />
+              <ListItemText primary={t("nav_drawer_notesapp")} />
             </ListItemButton>
           </ListItem>
       </List>
@@ -92,6 +96,7 @@ export default function TemporaryDrawer() {
       <Button onClick={toggleDrawer(true)}><MenuIcon /></Button>
       <Drawer open={open} onClose={toggleDrawer(false)}>
         {DrawerList}
+      <LanguagePicker/>
       </Drawer>
       <Button onClick={handleGoHome}><HomeIcon /></Button>
     </div>

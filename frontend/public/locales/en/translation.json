@@ -1,0 +1,11 @@
+{
+  "nav_drawer_about": "About",
+  "nav_drawer_event": "Event",
+  "nav_drawer_video": "Video",
+  "nav_drawer_gallery": "Gallery",
+  "nav_drawer_contact": "Contact",
+  "nav_drawer_notesapp": "Notes APP",
+  "welcome": "Welcome to React!",
+  "description": "This is an example with i18n language switching.",
+  "language": "Language"
+}

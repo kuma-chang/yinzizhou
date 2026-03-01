@@ -11,6 +11,8 @@ import EventPage from "./pages/EventPage"
 import VideoPage from "./pages/VideoPage"
 import GalleryPage from "./pages/GalleryPage"
 import ContactPage from "./pages/ContactPage"
+import "./i18n"
+
 
 function Logout() {
   localStorage.clear()
