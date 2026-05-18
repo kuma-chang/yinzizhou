@@ -22,7 +22,7 @@ import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
 import { useTranslation } from 'react-i18next';
 import LanguagePicker from './LanguagePicker';
 
-export default function TemporaryDrawer() {
+export default function NavDrawer() {
   const [open, setOpen] = React.useState(false);
   const navigate = useNavigate();
   const { t } = useTranslation();
@@ -68,7 +68,7 @@ export default function TemporaryDrawer() {
       <List>
         {pageList.map((page, index) => (
           <ListItem key={page.name} disablePadding>
-            <ListItemButton to={page.url}>
+            <ListItemButton onClick={() => navigate(page.url)}>
               <ListItemIcon>
                 {page.icon}
               </ListItemIcon>
