@@ -31,57 +31,60 @@ function ParticlesBackground() {
           }
         },
         fpsLimit: 60,
+        particles: {
+          number: {
+            value: 90
+          },
+          color: {
+            value: ["#C9A96E", "#8A9FE8", "#ffffff"]
+          },
+          links: {
+            enable: true,
+            distance: 130,
+            color: "#3D4B8A",
+            opacity: 0.12,
+            width: 0.5
+          },
+          twinkle: {
+            particles: { enable: true, frequency: 0.06, opacity: 0.9 }
+          },
+          move: {
+            enable: true,
+            speed: { min: 0.08, max: 0.35 },
+            direction: "none",
+            random: true,
+            straight: false,
+            outModes: { default: "out" }
+          },
+          opacity: {
+            value: { min: 0.08, max: 0.55},
+            animation: { enable: true, speed: 0.6, minimumValue: 0.05, sync: false }
+          },
+          size: {
+            value: { min: 0.8, max: 2.8 },
+            animation: { enable: true, speed: 1.2, minimumValue: 0.3, sync: false }
+          }
+        },
         interactivity: {
           events: {
             onHover: {
               enable: true,
-              mode: "bubble"
+              mode: "grab"
             },
             onClick: {
               enable: true,
               mode: "push"
-            }
+            },
+            resize: true
           },
           modes: {
-            bubble: {
-              distance: 40,
-              duration: 2,
-              mix: false,
-              opacity: 8,
-              size: 10,
-              divs: {
-                distance: 200,
-                duration: 0.4,
-                mix: false,
-                selectors: {}
-              }
+            grab: {
+              distance: 120,
+              links: { opacity: 0.28, color: "#C9A96E" }
             },
             push: {
               quantity: 4
             }
-          }
-        },
-        particles: {
-          number: {
-            value: 80
-          },
-          color: {
-            value: "#ffffff"
-          },
-          links: {
-            enable: true,
-            color: "#ffffff",
-            distance: 150
-          },
-          move: {
-            enable: true,
-            speed: 2
-          },
-          opacity: {
-            value: 0.5
-          },
-          size: {
-            value: { min:1, max:3 }
           }
         }
       }}
