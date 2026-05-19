@@ -5,7 +5,6 @@ import Note from "../components/Note"
 import "../styles/Home.css"
 
 import Button from '@mui/material/Button';
-import NavDrawer from '../components/NavDrawer'
 
 
 function Notes() {
@@ -58,7 +57,6 @@ function Notes() {
 
     return (
         <div>
-            <NavDrawer/>
             <Button 
               variant="contained" 
               onClick={handleLogout}
