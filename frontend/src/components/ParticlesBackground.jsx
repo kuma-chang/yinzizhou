@@ -83,7 +83,7 @@ function ParticlesBackground() {
               links: { opacity: 0.28, color: "#C9A96E" }
             },
             push: {
-              quantity: 4
+              quantity: 3
             }
           }
         }
